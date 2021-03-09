@@ -17,6 +17,12 @@
 		6874A1CC25DBAD95005B48AB /* MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6874A1CB25DBAD95005B48AB /* MovieServices.swift */; };
 		6874A1D125DBB3A3005B48AB /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6874A1D025DBB3A3005B48AB /* MovieStore.swift */; };
 		6874A1D625DBB595005B48AB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6874A1D525DBB595005B48AB /* Utils.swift */; };
+		68E63B2925DE18FA002A260B /* Movie+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E63B2825DE18FA002A260B /* Movie+Stub.swift */; };
+		68E63B3725DE1992002A260B /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = 68E63B3425DE1992002A260B /* movie_info.json */; };
+		68E63B3825DE1992002A260B /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 68E63B3525DE1992002A260B /* movie_list.json */; };
+		68E63B3925DE1992002A260B /* search_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = 68E63B3625DE1992002A260B /* search_movie.json */; };
+		68E63B4525DE1CBF002A260B /* MovieBackdropcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E63B4425DE1CBF002A260B /* MovieBackdropcard.swift */; };
+		68E63B4B25DE1DAE002A260B /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E63B4A25DE1DAE002A260B /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 /* Begin PBXFileReference section */
 		6874A14525DB9ED0005B48AB /* tmdb-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tmdb-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6874A14825DB9ED0005B48AB /* tmdb_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdb_swiftuiApp.swift; sourceTree = "<group>"; };
-		6874A14A25DB9ED0005B48AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6874A14A25DB9ED0005B48AB /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 10; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 10; usesTabs = 0; };
 		6874A14C25DB9ED6005B48AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6874A14F25DB9ED6005B48AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6874A15125DB9ED6005B48AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +59,12 @@
 		6874A1CB25DBAD95005B48AB /* MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServices.swift; sourceTree = "<group>"; };
 		6874A1D025DBB3A3005B48AB /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
 		6874A1D525DBB595005B48AB /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		68E63B2825DE18FA002A260B /* Movie+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stub.swift"; sourceTree = "<group>"; };
+		68E63B3425DE1992002A260B /* movie_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
+		68E63B3525DE1992002A260B /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
+		68E63B3625DE1992002A260B /* search_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_movie.json; sourceTree = "<group>"; };
+		68E63B4425DE1CBF002A260B /* MovieBackdropcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropcard.swift; sourceTree = "<group>"; };
+		68E63B4A25DE1DAE002A260B /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +95,9 @@
 		6874A13C25DB9ED0005B48AB = {
 			isa = PBXGroup;
 			children = (
+				6874A16425DB9ED6005B48AB /* tmdb-swiftuiUITests */,
 				6874A14725DB9ED0005B48AB /* tmdb-swiftui */,
 				6874A15925DB9ED6005B48AB /* tmdb-swiftuiTests */,
-				6874A16425DB9ED6005B48AB /* tmdb-swiftuiUITests */,
 				6874A14625DB9ED0005B48AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,8 +115,11 @@
 		6874A14725DB9ED0005B48AB /* tmdb-swiftui */ = {
 			isa = PBXGroup;
 			children = (
-				6874A1C725DBAD72005B48AB /* services */,
-				6874A1BE25DBAD1B005B48AB /* models */,
+				68E63B4925DE1D8D002A260B /* Bindings */,
+				68E63B4325DE1C95002A260B /* Views */,
+				68E63B2D25DE1923002A260B /* Resources */,
+				6874A1C725DBAD72005B48AB /* Services */,
+				6874A1BE25DBAD1B005B48AB /* Models */,
 				6874A14825DB9ED0005B48AB /* tmdb_swiftuiApp.swift */,
 				6874A14A25DB9ED0005B48AB /* ContentView.swift */,
 				6874A14C25DB9ED6005B48AB /* Assets.xcassets */,
@@ -141,21 +156,48 @@
 			path = "tmdb-swiftuiUITests";
 			sourceTree = "<group>";
 		};
-		6874A1BE25DBAD1B005B48AB /* models */ = {
+		6874A1BE25DBAD1B005B48AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				6874A1BF25DBAD43005B48AB /* Movie.swift */,
+				68E63B2825DE18FA002A260B /* Movie+Stub.swift */,
 			);
-			path = models;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		6874A1C725DBAD72005B48AB /* services */ = {
+		6874A1C725DBAD72005B48AB /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				6874A1CB25DBAD95005B48AB /* MovieServices.swift */,
 				6874A1D025DBB3A3005B48AB /* MovieStore.swift */,
 			);
-			path = services;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		68E63B2D25DE1923002A260B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68E63B3425DE1992002A260B /* movie_info.json */,
+				68E63B3525DE1992002A260B /* movie_list.json */,
+				68E63B3625DE1992002A260B /* search_movie.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		68E63B4325DE1C95002A260B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68E63B4425DE1CBF002A260B /* MovieBackdropcard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68E63B4925DE1D8D002A260B /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				68E63B4A25DE1DAE002A260B /* ImageLoader.swift */,
+			);
+			path = Bindings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6874A15025DB9ED6005B48AB /* Preview Assets.xcassets in Resources */,
+				68E63B3725DE1992002A260B /* movie_info.json in Resources */,
 				6874A14D25DB9ED6005B48AB /* Assets.xcassets in Resources */,
+				68E63B3925DE1992002A260B /* search_movie.json in Resources */,
+				68E63B3825DE1992002A260B /* movie_list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +334,10 @@
 			files = (
 				6874A1C025DBAD43005B48AB /* Movie.swift in Sources */,
 				6874A14B25DB9ED0005B48AB /* ContentView.swift in Sources */,
+				68E63B4525DE1CBF002A260B /* MovieBackdropcard.swift in Sources */,
 				6874A1CC25DBAD95005B48AB /* MovieServices.swift in Sources */,
+				68E63B2925DE18FA002A260B /* Movie+Stub.swift in Sources */,
+				68E63B4B25DE1DAE002A260B /* ImageLoader.swift in Sources */,
 				6874A14925DB9ED0005B48AB /* tmdb_swiftuiApp.swift in Sources */,
 				6874A1D125DBB3A3005B48AB /* MovieStore.swift in Sources */,
 				6874A1D625DBB595005B48AB /* Utils.swift in Sources */,
@@ -451,6 +499,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"tmdb-swiftui/Preview Content\"";
+				DEVELOPMENT_TEAM = LUH7Q4A9GM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "tmdb-swiftui/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -472,6 +521,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"tmdb-swiftui/Preview Content\"";
+				DEVELOPMENT_TEAM = LUH7Q4A9GM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "tmdb-swiftui/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
