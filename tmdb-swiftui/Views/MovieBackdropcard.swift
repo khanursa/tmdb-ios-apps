@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MovieBackdropcard: View {
+<<<<<<< HEAD
     
     let movie: Movie
     @ObservedObject var imageLoader = ImageLoader()
@@ -34,11 +35,19 @@ struct MovieBackdropcard: View {
             self.imageLoader.loadImage(with: self.movie.backdropURL)
             
         }
+=======
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+>>>>>>> 0352940ee740742db850cd50037208f4af2c7e14
     }
 }
 
 struct MovieBackdropcard_Previews: PreviewProvider {
     static var previews: some View {
+<<<<<<< HEAD
         MovieBackdropcard(movie: Movie.stubbedMovie)
+=======
+        MovieBackdropcard()
+>>>>>>> 0352940ee740742db850cd50037208f4af2c7e14
     }
 }
